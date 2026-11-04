@@ -145,5 +145,34 @@ nav ul {
     padding: 40px 40px;
 }
 
+.page_article article {
+    border: 2px solid #15181E;
+    padding-left: 2rem;
+    padding: 30px;
+}
+
+.page_article .articles h3 {
+    color: #550a0d;
+    text-decoration: underline;
+}
+
+.page_article .articles a {
+    text-decoration: none;
+}
+
+.page_article article h3:hover {
+    color: #15181E;
+    text-decoration: underline;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+
 .desc h1 {
 }
