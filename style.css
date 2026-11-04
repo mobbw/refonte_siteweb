@@ -1,11 +1,19 @@
 * {
   margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 body {
   background-image: url(assets/parchment.jpg);
   background-size: cover;
   background-color: #ece2d0;
+}
+
+/* Rendre toutes les images responsives par défaut */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
@@ -39,7 +47,6 @@ footer img {
 }
 
 header {
-  /* background-color: #EEEBE4; */
   background-color: #ece2d0;
   padding: 15px 40px;
   position: sticky;
@@ -97,6 +104,7 @@ nav ul {
   display: flex;
   gap: 2rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .page_acceuil {
@@ -105,6 +113,7 @@ nav ul {
   padding: 40px 40px;
   gap: 3rem;
   margin-top: 40px;
+  align-items: center;
 }
 
 .acceuil_gauche h1 {
@@ -123,23 +132,24 @@ nav ul {
 
 .page_acceuil img {
   border-radius: 30px;
-  margin-right: 100px;
 }
 
 .contain_bouttons {
   display: flex;
   justify-content: flex-start;
-  margin: 20px;
+  margin: 20px 0;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .boutton {
   background-color: #15181e;
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px 20px;
   color: #eeebe4;
   text-decoration: none;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 .boutton:hover {
@@ -152,7 +162,6 @@ nav ul {
 
 .page_article article {
   border: 2px solid #15181e;
-  padding-left: 2rem;
   padding: 30px;
   border-radius: 10px;
 }
@@ -188,10 +197,12 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 20px 0;
 }
 
 .contain_lignes img {
   height: 4rem;
+  width: auto;
 }
 
 .ligne {
@@ -200,70 +211,30 @@ nav ul {
   background-color: #15181e;
 }
 
-@media screen and (width < 1200px) {
-  header {
-    padding: 15px 20px;
-  }
-
-  .header_contain {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .header_droit ul {
-    flex-wrap: wrap;
-  }
-
-  .articles {
-    gap: 1.5rem;
-  }
-}
-
-/* Petites tablettes et téléphones : tout en colonne */
-@media screen and (width < 780px) {
-  header {
-    position: static;
-  }
-
-  .acceuil_gauche h1 {
-    font-size: 2rem;
-  }
-
-  .page_acceuil {
-    flex-direction: column;
-  }
-
-  .page_acceuil img {
-    width: 100%;
-  }
-
-  .contain_bouttons {
-    margin: 0;
-  }
-
-  .articles {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1.5rem;
-  }
-}
-
 .banner {
   width: 100%;
   height: 85vh;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
-  object-position: center;
 }
 
 .titre {
   color: white;
   font-size: 25px;
-  z-index: 1;
+  z-index: 10;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
   position: absolute;
   top: 50%;
-  left: 5%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
 }
 
 .titre2 {
@@ -296,30 +267,21 @@ nav ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  
 }
 
 .grid img {
   height: 60px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .section-container {
   max-width: 1200px;
   margin: 60px auto;
   padding: 20px;
-  margin: 15px;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.card img {
-  display: block;
-  margin: 0 auto;
-}
 .card h3 {
   text-align: center;
   justify-content: center;
@@ -330,17 +292,116 @@ nav ul {
   display: flex;
   align-items: center;
   margin: 15px;
+  gap: 20px;
 }
 
 .flexbox figure {
   text-align: center;
+  flex: 1;
 }
 
 .flexbox img {
   border-radius: 10%;
 }
+
 .flexbox p {
   text-align: left;
   font-size: 25px;
   margin: 15px;
+  flex: 1;
+}
+
+/* Écrans de taille moyenne (Tablettes) */
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .header_contain {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .header_droit ul {
+    justify-content: center;
+  }
+
+  .page_acceuil {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .acceuil_gauche p {
+    width: 100%;
+  }
+
+  .contain_bouttons {
+    justify-content: center;
+  }
+}
+
+/* Petites tablettes et téléphones */
+@media screen and (max-width: 780px) {
+  header {
+    position: static;
+  }
+
+  .header_droit ul {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .acceuil_gauche h1 {
+    font-size: 2rem;
+  }
+
+  .page_acceuil {
+    padding: 20px;
+  }
+
+  .page_acceuil img {
+    width: 100%;
+  }
+
+  .contain_bouttons {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .articles {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  .page_article {
+    padding: 10px 20px 20px 20px;
+  }
+
+  /* Grille des 4 blocs du lycée sur une seule colonne */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flexbox {
+    flex-direction: column;
+  }
+
+  .flexbox p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .texte p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .titre {
+    font-size: 20px;
+    top: 10%;
+  }
 }
