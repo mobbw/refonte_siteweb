@@ -112,6 +112,7 @@ nav ul {
 .acceuil_gauche p {
   padding-top: 30px;
   padding-bottom: 30px;
+  width: 80%;
 }
 
 .acceuil_gauche .titre_nom_lycee {
@@ -144,7 +145,6 @@ nav ul {
 }
 
 .page_article {
-  border-top: 2px solid #15181e;
   padding: 40px 40px;
 }
 
@@ -152,6 +152,7 @@ nav ul {
   border: 2px solid #15181e;
   padding-left: 2rem;
   padding: 30px;
+  border-radius: 10px;
 }
 
 .page_article .articles h3 {
@@ -173,4 +174,20 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   padding-top: 20px;
+}
+
+.contain_lignes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain_lignes img {
+    height: 4rem;
+}
+
+.ligne {
+    height: 2px;
+    width: 40%;
+    background-color: #15181e;
 }
