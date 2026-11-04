@@ -216,16 +216,17 @@ nav ul {
   justify-content: center;
 }
 
-p {
-  font-size: 20px;
+.desc {
+  margin: 15px;
+  padding: 15px;
+}
+
+.text p {
+  font-size: 20%;
   text-align: center;
   justify-content: center;
   padding: 15px;
   margin: 20px;
-}
-
-section img {
-  height: 60px;
 }
 
 .card {
@@ -240,11 +241,15 @@ section img {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
+.grid img {
+  height: 60px;
+}
 
 .section-container {
   max-width: 1200px;
   margin: 60px auto;
   padding: 20px;
+  margin: 15px;
 }
 
 * {
@@ -266,14 +271,15 @@ section img {
 .flexbox {
   display: flex;
   align-items: center;
+  margin: 15px;
 }
 
 .flexbox figure {
   text-align: center;
 }
 
-.figure img {
-  border-radius: 15%;
+.flexbox img {
+  border-radius: 10%;
 }
 .flexbox p {
   text-align: left;
