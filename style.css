@@ -277,7 +277,7 @@ nav ul {
   padding: 15px;
 }
 
-.text p {
+.texte p {
   font-size: 20%;
   text-align: center;
   justify-content: center;
@@ -339,4 +339,6 @@ nav ul {
 }
 .flexbox p {
   text-align: left;
+  font-size: 25px;
+  margin: 15px;
 }
