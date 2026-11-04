@@ -96,15 +96,53 @@ nav ul {
 
 .page_acceuil {
     display: flex;
+    justify-content: space-between;
+    padding: 40px 40px;
+    gap:3rem;
+    margin-top: 40px;
 }
 
-.acceuil_gauche {
-    width: 50%;
-    padding: 20px 20px ;
+.acceuil_gauche h1{
+    font-size: 3rem;
+}
+
+.acceuil_gauche p{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .acceuil_gauche .titre_nom_lycee {
     color: #550a0d;
+}
+
+.page_acceuil img {
+    border-radius: 30px;
+    margin-right: 100px;
+}
+
+.contain_bouttons {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    gap:2rem;
+}
+
+.boutton {
+    background-color: #15181E;
+    border-radius: 20px;
+    padding: 10px;
+    color: #EEEBE4;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+.boutton:hover {
+    background-color: #550a0d;
+}
+
+.page_article {
+    border-top: 2px solid #15181E;
+    padding: 40px 40px;
 }
 
 .desc h1 {
