@@ -260,3 +260,16 @@ section img {
   justify-content: center;
   padding: 15px;
 }
+
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+
+.flexbox figure {
+  text-align: center;
+}
+
+.flexbox p {
+  text-align: left;
+}
