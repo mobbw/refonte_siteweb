@@ -20,28 +20,52 @@ body {
 
 header {
     /* background-color: #EEEBE4; */
-    background-color: blue;
+    background-color: #EEEBE4;
     padding: 15px 40px;
     position: sticky;
     z-index: 1000;
     top: 0;
-    
 }
 
 .header_contain {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav a{
-    text-decoration: none;
-    color: inherit;
+#header_important {
+    border: 2px solid #15181E;
+    background-color: #15181E;
+    border-radius: 30px;
+    padding: 10px 10px;
+    color: #EEEBE4;
 }
+
+#header_important:hover {
+    border: 2px solid #550a0d;
+    background-color: #550a0d;
+}
+
+#texte_important {
+    font-size: 1.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #15181E;
+}
+
+.header_droit a:hover {
+    color: #550a0d;
+    font-weight: bold;
+} 
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
+
 .desc h1 {
 }
