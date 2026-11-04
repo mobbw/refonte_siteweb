@@ -10,7 +10,7 @@ body {
 }
 
 footer {
-    background-color: #ece2d0;
+  background-color: #ece2d0;
   padding: 15px 15px;
   border-top: 2px solid #15181e;
   display: flex;
@@ -186,6 +186,7 @@ h1 {
   font-weight: 600;
   line-height: 1.15;
   font-size: clamp(2.2rem, 6vw, 3.8rem);
+  text-align: center;
 }
 .Enseignements {
   font-family: "Cormorant Garamond";
@@ -235,13 +236,13 @@ border-color: #8a2a3b;
 }
 
 .contain_lignes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contain_lignes img {
-    height: 4rem;
+  height: 4rem;
 }
 
 .ligne {
@@ -250,7 +251,7 @@ border-color: #8a2a3b;
     background-color: #15181e;
 }
 
-.titre {
+.bloc1 {
   margin-left: 80px;
   font-family: "Cormorant Garamond";
   line-height: 70px;  
@@ -260,4 +261,92 @@ border-color: #8a2a3b;
   border: #550a0d;
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+ 
+
+.banner {
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  display: block;
+  object-position: center;
+}
+
+.titre {
+  color: white;
+  font-size: 25px;
+  z-index: 1;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.titre2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+  margin: 20px;
+}
+
+section img {
+  height: 60px;
+}
+
+.card {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+}
+.card h3 {
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+
+.flexbox figure {
+  text-align: center;
+}
+
+.figure img {
+  border-radius: 15%;
+}
+.flexbox p {
+  text-align: left;
 }
