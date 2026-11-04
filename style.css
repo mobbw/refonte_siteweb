@@ -282,7 +282,7 @@ nav ul {
   text-align: center;
   justify-content: center;
   padding: 15px;
-  margin: 20px;w
+  margin: 20px;
 }
 
 .card {
@@ -339,4 +339,6 @@ nav ul {
 }
 .flexbox p {
   text-align: left;
+  font-size: 25px;
+  margin: 15px;
 }
