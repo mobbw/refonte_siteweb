@@ -272,19 +272,27 @@ border-color: #8a2a3b;
 .banner {
   width: 100%;
   height: 85vh;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
-  object-position: center;
 }
 
 .titre {
   color: white;
   font-size: 25px;
-  z-index: 1;
+  z-index: 10;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
   position: absolute;
   top: 50%;
-  left: 5%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
 }
 
 .titre2 {
@@ -293,7 +301,12 @@ border-color: #8a2a3b;
   justify-content: center;
 }
 
-.txt p {
+.desc {
+  margin: 15px;
+  padding: 15px;
+}
+
+.texte p {
   font-size: 20px;
   text-align: center;
   justify-content: center;
@@ -314,16 +327,19 @@ border-color: #8a2a3b;
   gap: 30px;
 }
 
+.grid img {
+  height: 60px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .section-container {
   max-width: 1200px;
   margin: 60px auto;
   padding: 20px;
 }
 
-.card img {
-  display: block;
-  margin: 0 auto;
-}
 .card h3 {
   text-align: center;
   justify-content: center;
@@ -333,17 +349,24 @@ border-color: #8a2a3b;
 .flexbox {
   display: flex;
   align-items: center;
+  margin: 15px;
+  gap: 20px;
 }
 
 .flexbox figure {
   text-align: center;
+  flex: 1;
 }
 
-.figure img {
-  border-radius: 15%;
+.flexbox img {
+  border-radius: 10%;
 }
+
 .flexbox p {
   text-align: left;
+  font-size: 25px;
+  margin: 15px;
+  flex: 1;
 }
 
 h3 {
