@@ -9,6 +9,7 @@ body {
 }
 
 footer {
+    background-color: #ece2d0;
   padding: 15px 15px;
   border-top: 2px solid #15181e;
   display: flex;
@@ -39,7 +40,7 @@ footer img {
 
 header {
   /* background-color: #EEEBE4; */
-  background-color: #eeebe4;
+  background-color: #ece2d0;
   padding: 15px 40px;
   position: sticky;
   z-index: 1000;
