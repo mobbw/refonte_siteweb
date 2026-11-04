@@ -644,3 +644,9 @@ html {
     padding: 20px;
   }
 }
+
+.txt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
