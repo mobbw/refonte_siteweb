@@ -217,9 +217,11 @@ nav ul {
 }
 
 p {
+  font-size: 20px;
   text-align: center;
   justify-content: center;
   padding: 15px;
+  margin: 20px;
 }
 
 section img {
@@ -270,6 +272,9 @@ section img {
   text-align: center;
 }
 
+.figure img {
+  border-radius: 15%;
+}
 .flexbox p {
   text-align: left;
 }
