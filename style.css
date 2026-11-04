@@ -18,6 +18,10 @@ body {
     color: rgb(250, 194, 90);
 }
 
+.on_header a:hover {
+    font-weight: bold;
+}
+
 header {
     /* background-color: #EEEBE4; */
     background-color: #EEEBE4;
