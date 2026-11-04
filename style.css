@@ -277,11 +277,7 @@ nav ul {
   padding: 15px;
 }
 
-<<<<<<< HEAD
 .texte p {
-=======
-.text p {
->>>>>>> af49f863d82b3cf3156581d5ff37920b50a695c4
   font-size: 20px;
   text-align: center;
   justify-content: center;
@@ -298,7 +294,7 @@ nav ul {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, 1fr);
   gap: 30px;
 }
 .grid img {
