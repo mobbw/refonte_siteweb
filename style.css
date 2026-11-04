@@ -37,6 +37,16 @@ header {
     align-items: center;
 }
 
+.header_gauche ul {
+    gap: 0.5rem;
+}
+
+.header_droit a:hover {
+    color: #550a0d;
+    font-weight: bold;
+    border-bottom: 2px solid #550a0d;
+} 
+
 #header_important {
     border: 2px solid #15181E;
     background-color: #15181E;
@@ -52,17 +62,13 @@ header {
 
 #texte_important {
     font-size: 1.5rem;
+    font-style: italic;
 }
 
 nav a{
     text-decoration: none;
     color: #15181E;
 }
-
-.header_droit a:hover {
-    color: #550a0d;
-    font-weight: bold;
-} 
 
 nav ul {
     list-style: none;
