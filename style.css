@@ -10,7 +10,6 @@ body {
   background-color: #ece2d0;
 }
 
-/* Rendre toutes les images responsives par défaut */
 img {
   max-width: 100%;
   height: auto;
@@ -340,7 +339,6 @@ nav ul {
   }
 }
 
-/* Petites tablettes et téléphones */
 @media screen and (max-width: 780px) {
   header {
     position: static;
@@ -381,7 +379,6 @@ nav ul {
     padding: 10px 20px 20px 20px;
   }
 
-  /* Grille des 4 blocs du lycée sur une seule colonne */
   .grid {
     grid-template-columns: 1fr;
   }
