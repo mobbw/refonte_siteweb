@@ -65,11 +65,13 @@ header {
 }
 
 #header_important {
-  border: 2px solid #15181e;
-  background-color: #15181e;
-  border-radius: 30px;
-  padding: 10px 10px;
-  color: #eeebe4;
+    border: 2px solid #15181e;
+    background-color: #15181e;
+    border-radius: 30px;
+    padding: 10px 10px;
+    color: #eeebe4;
+    display: inline-block;
+    flex-wrap: nowrap;
 }
 
 #header_important:hover {
@@ -172,8 +174,10 @@ nav ul {
 .articles {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   padding-top: 20px;
+  gap: 1.5rem;
+
 }
 
 .contain_lignes {
@@ -190,4 +194,54 @@ nav ul {
     height: 2px;
     width: 40%;
     background-color: #15181e;
+}
+
+
+@media screen and (width < 1200px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .header_contain {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .header_droit ul {
+    flex-wrap: wrap;
+  }
+
+  .articles {
+    gap:1.5rem;
+  }
+}
+
+/* Petites tablettes et téléphones : tout en colonne */
+@media screen and (width < 780px) {
+  
+  header {
+    position: static;
+  }
+
+  .acceuil_gauche h1 {
+  font-size: 2rem;
+}
+
+  .page_acceuil {
+    flex-direction: column;
+  }
+
+  .page_acceuil img {
+    width: 100%;
+  }
+
+  .contain_bouttons {
+    margin: 0;
+  }
+
+  .articles {
+    flex-direction: column;
+    align-items: stretch;
+    gap:1.5rem;
+  }
 }
