@@ -277,7 +277,7 @@ nav ul {
   padding: 15px;
 }
 
-.text p {
+.texte p {
   font-size: 20px;
   text-align: center;
   justify-content: center;
@@ -294,7 +294,7 @@ nav ul {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, 1fr);
   gap: 30px;
   
 }
