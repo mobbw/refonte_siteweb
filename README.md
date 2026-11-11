@@ -109,5 +109,4 @@ Les autres entrées du menu (Actualités, Articles, EPS, Contact, Bac STMG 2026)
 
 ## 📜 Licence
 
-À définir par l'auteur du projet.
 Les textes et le nom de l'établissement appartiennent au lycée Thibaut de Champagne.
